@@ -1,0 +1,160 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(171, 173, 171);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+.slider1:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 6px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider1 {
+    background-color: #2196F3;
+}
+
+input:focus+.slider1 {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider1:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+.slider1.round {
+    border-radius: 34px;
+}
+
+.slider1.round:before {
+    border-radius: 50%;
+}
+
+.inputField {
+    height: 40px;
+    margin: 12px 0;
+    border-Width: 1px;
+    padding: 10px;
+}
+.item-container{
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+}
+ .item-container:hover{
+     background-color: #f0fff1;
+     display: block;
+     transform: scale(1.1);
+     cursor: pointer;
+     border-radius: 10px;
+ }
+
+ #d{
+     padding: 10px;
+ }
+
+ .circle{
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     background: #75747a;
+     margin: 10px 10px 0 0;
+     border-radius: 25px;
+     cursor: pointer;
+ }
+
+.circle:hover{
+    scale: 1.2;
+}
+
+ .rectangle{
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     background: #75747a;
+     margin: 10px 10px 0 0;
+     cursor: pointer;
+ }
+.rectangle:hover{
+    scale: 1.2;
+}
+
+.circleShape{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #89f161;
+    margin: 10px 10px 0 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.circleShape:hover{
+    scale: 1.2;
+}
+
+.rectangleShape{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #89f161;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.rectangleShape:hover{
+    scale: 1.2;
+}
+
+.selectColorText{
+    vertical-align: text-bottom;
+    display: inline-block;
+    margin: 3px;
+}
+
+.selectColor{
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background: #89f161;
+    margin: 3px 0 0 0;
+    cursor: pointer;
+}
+
+.a1 {
+    display: inline-block;
+    margin: 0 0 10px 0;
+}
+
+.b1{
+    margin: 0 0 0 20px;
+}
